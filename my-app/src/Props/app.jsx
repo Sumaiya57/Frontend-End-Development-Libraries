@@ -10,8 +10,8 @@ function App(){
 }
 export default App;
 
-function Greeting (props){
-    console.log(props);
-    return <h1>Hi {props.name}!</h1>;
+function Greeting ({name}){
+    console.log(name);
+    return <h1>Hi {name}!</h1>;
 }
 
