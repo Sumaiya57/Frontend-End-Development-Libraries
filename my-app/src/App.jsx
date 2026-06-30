@@ -1,9 +1,14 @@
-
-function App() {
-  return <Greeting />;
+import React from 'react';
+import { useState } from 'react'
+function Card({children}){
+    return <div className="card">{children}</div>
 }
 
-function Greeting(props) {
-  const developerName = "Jessica";
-  return <h1>Hi {developerName}!</h1>;
+function App(){
+    return (
+        <Card>
+            <h2>hello</h2>
+        </Card>
+    );
 }
+export default App;

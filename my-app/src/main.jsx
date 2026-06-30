@@ -8,3 +8,9 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+function App() {
+  return <h1>It Works!</h1>;
+}
+
+export default App;
