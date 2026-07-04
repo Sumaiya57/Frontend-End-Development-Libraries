@@ -1,13 +1,15 @@
-function Card({ children }) {
-  return <div className="card">{children}</div>;
+function Child(props){
+    return( 
+        <h1>Title:{props.title}
+        Level:{props.level}
+     </h1>
+     
+     );
+    
 }
+function Parent(){
+    const info={ title: "React Basics", level: "Beginner" };
+    return <Child {...info} />
 
-function App() {
-  return (
-    <Card>
-      <h2>hello</h2>
-    </Card>
-  );
 }
-
-export default App;
+export default Parent;
